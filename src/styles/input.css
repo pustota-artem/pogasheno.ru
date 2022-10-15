@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    /* scroll-behavior: smooth; */
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Bitter', serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* h2 {
+    font-size: ;
+}
+
+h3 {
+
+}
+
+h4 {
+
+} */
+
+p {
+    font-size: 18px;
+}
+
+#step1::before {
+    position: absolute;
+    content: "1";
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bitter', serif;
+    left: -20px;
+    bottom: -20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #00306e;
+    color: white;
+}
+
+#step2::before {
+    position: absolute;
+    content: "2";
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bitter', serif;
+    left: -20px;
+    bottom: -20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #00306e;
+    color: white;
+}
+
+#step3::before {
+    position: absolute;
+    content: "3";
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bitter', serif;
+    left: -20px;
+    bottom: -20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #00306e;
+    color: white;
+}
+
+#step4::before {
+    position: absolute;
+    content: "4";
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bitter', serif;
+    left: -20px;
+    bottom: -20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #00306e;
+    color: white;
+}
