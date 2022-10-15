@@ -117,35 +117,39 @@
 
     <section class="relative flex justify-center overflow-hidden -z-30 h-[750px] bg-slate-100 text-black md:text-black">
 
-        <span class="absolute w-full h-full bg-black opacity-30 -z-10 md:hidden"></span>
+        <span class="absolute w-full h-full bg-black opacity-60 -z-10 md:hidden"></span>
 
-        <div class="md:w-[1385px] w-[400px] p-10 md:p-20">
+        <div class="md:w-[1385px] w-[400px] p-5 md:p-20">
 
-            <div class="relative w-[1000px]">
-                <img src="src/img/main3.png" alt="Фото юриста" class="absolute -left-[220px] md:-top-[20px] -z-20">
+            <div class="relative w-[1700px] md:w-[1000px]">
+                <img src="src/img/main3.png" alt="Фото юриста" class="absolute -left-[220px] -top-[100px] md:-top-[20px] -z-20">
             </div>
 
-            <div class="flex items-center justify-end md:text-center">
+            <div class="flex items-center justify-end h-full text-gray-50 md:text-black md:h-min md:text-center">
+
                 <div
-                    class="flex flex-col justify-start md:justify-center md:items-center space-y-5 md:space-y-10 max-w-[800px]">
-                    <!-- <div class="h-[35px]"></div> -->
-                    <h1 class="text-4xl font-bold md:text-6xl md:w-auto">Спишу <span class="text-[#d9002b]">все ваши
+                    class="flex flex-col justify-start md:justify-center md:items-center md:space-y-10 max-w-[800px]">
+
+                    <h1 class="mb-8 text-5xl font-bold md:text-6xl md:w-auto">Спишу <span class="text-[#d9002b]">все ваши
                             долги</span> или верну
                         деньги</h1>
-                    <p class="text-2xl">Все сделаю за вас — от сбора документов до решения суда</p>
-                    <ul class="flex flex-col text-md md:flex-row md:space-x-10">
+                        
+                    <p class="mb-8 text-xl md:text-2xl">Все сделаю за вас — от сбора документов до решения суда</p>
+                    
+                    <ul class="flex flex-col mb-16 space-y-2 text-md md:flex-row md:space-x-10">
                         <li>Сохраню ваше имущество</li>
                         <li>Банкротство за 2 месяца</li>
                         <li>100% результат</li>
                     </ul>
-                    <div class="flex items-center justify-center space-x-5">
-                        <!-- <p class="animate-bounce">Узнай за 1 минуту с чего начать -></p> -->
-                        <button
-                            class="mt- p-3 font-semibold text-white bg-[#00306e] rounded-xl shadow-2xl px-6 text-lg">Бесплатная
-                            консультация</button>
-                    </div>
+
+                    <button
+                        class="p-3 font-semibold text-white bg-[#00306e] rounded-xl shadow-2xl w-[300px] text-lg">Бесплатная
+                        консультация</button>
+
                 </div>
+
             </div>
+
 
         </div>
 
@@ -482,9 +486,9 @@
                     </div>
                   </div> -->
 
-                  <!-- TW-ELEMENTS -->
+                <!-- TW-ELEMENTS -->
 
-                  <table class="w-full">
+                <table class="w-full">
                     <thead class="border-b-2 border-gray-200 bg-gray-50">
                         <tr>
                             <th class="p-3 text-sm font-semibold tracking-wide text-left">1</th>
@@ -510,7 +514,7 @@
                             <td class="p-3 text-sm text-gray-700">Lorem Ipsum 9</td>
                         </tr>
                     </tbody>
-                  </table>
+                </table>
 
 
             </div>
@@ -627,16 +631,27 @@
 
     <!-- CTA -->
 
-    <section class="flex justify-center bg-slate-100">
-        <div class="relative max-w-[1385px] lg:px-20 lg:pt-20 px-10 pt-10">
-            <h1 class="z-30">Оставьте заявку сейчас</h1>
-            <p class="mb-[250px] text-3xl lg:mb-14">и получите <span class="text-[#d9002b]">бесплатную консультацию</span> не выходя
+    <section class="flex justify-center overflow-hidden bg-slate-100">
+        <div class="relative w-[1385px] p-0 md:p-20">
+            <h1 class="">Оставьте заявку сейчас</h1>
+            <p class="text-3xl mb-14">и получите <span class="text-[#d9002b]">бесплатную консультацию</span> не выходя
                 из дома</p>
-            <div class="flex flex-wrap justify-between">
-                <div class="md:w-[650px] w-[400px] top-[270px] md:top-0 absolute md:relative">
+
+
+
+            <div class="flex flex-wrap justify-end w-full ">
+
+                <div class="hidden md:block absolute max-w-[650px] -left-[200px] lg:left-0 z-10">
                     <img src="src/img/cta.png" alt="" class="">
                 </div>
-                <div class="max-w-[500px] h-auto z-30">
+
+                <div class="block md:hidden lg:w-[650px] w-[400px]">
+                    <img src="src/img/cta-mobile.png" alt="" class="">
+                </div>
+
+
+
+                <div class="max-w-[500px] z-20">
                     <form class="flex flex-col p-10 bg-white shadow-xl rounded-xl" action="">
                         <p class="mb-6 text-2xl font-bold">Акция действует до конца месяца</p>
                         <p class="mb-2">Имя:</p>
@@ -649,7 +664,11 @@
                             консультацию</button>
                     </form>
                 </div>
+
             </div>
+
+        </div>
+
         </div>
     </section>
 
