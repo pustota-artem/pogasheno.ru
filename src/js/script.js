@@ -64,12 +64,45 @@ for (let i = 0; i < openBtns.length; i++) {
     openBtn.onclick = () => {
         if (infoBlock.classList.contains('max-h-0')) {
             infoBlock.classList.remove('max-h-0');
-            infoBlock.classList.add('max-h-40');
+            infoBlock.classList.add('max-h-[500px]');
             openBtn.classList.add('rotate-180');
         } else {
-            infoBlock.classList.remove('max-h-40');
+            infoBlock.classList.remove('max-h-[500px]');
             infoBlock.classList.add('max-h-0');
             openBtn.classList.remove('rotate-180');
         }
     }
 };
+
+// SWIPER 
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },    
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+  });
