@@ -64,10 +64,10 @@ for (let i = 0; i < openBtns.length; i++) {
     openBtn.onclick = () => {
         if (infoBlock.classList.contains('max-h-0')) {
             infoBlock.classList.remove('max-h-0');
-            infoBlock.classList.add('max-h-[500px]');
+            infoBlock.classList.add('max-h-[600px]');
             openBtn.classList.add('rotate-180');
         } else {
-            infoBlock.classList.remove('max-h-[500px]');
+            infoBlock.classList.remove('max-h-[600px]');
             infoBlock.classList.add('max-h-0');
             openBtn.classList.remove('rotate-180');
         }
