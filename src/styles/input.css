@@ -48,7 +48,7 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    opacity: 60%;
+    /* opacity: 60%; */
 }
 
 
@@ -65,7 +65,7 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    opacity: 60%;
+    /* opacity: 60%; */
 }
 
 #step3::before {
@@ -81,7 +81,7 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    opacity: 60%;
+    /* opacity: 60%; */
 }
 
 #step4::before {
@@ -97,7 +97,7 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    opacity: 60%;
+    /* opacity: 60%; */
 }
 
 /* #faq::before {
