@@ -32,7 +32,7 @@ h4 {
 } */
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #step1::before {
@@ -48,7 +48,9 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
+    opacity: 60%;
 }
+
 
 #step2::before {
     position: absolute;
@@ -63,6 +65,7 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
+    opacity: 60%;
 }
 
 #step3::before {
@@ -78,6 +81,7 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
+    opacity: 60%;
 }
 
 #step4::before {
@@ -93,5 +97,19 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
+    opacity: 60%;
 }
 
+/* #faq::before {
+    position: absolute;
+    content: "?.";
+    font-size: 12rem;
+    font-family: 'Bitter', serif;
+    left: 480px;
+    bottom: 10px;
+    rotate: -20deg;
+    color: #00306e;
+    opacity: 30%;
+    z-index: -10;
+    letter-spacing: -30px;
+} */
