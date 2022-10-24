@@ -12,24 +12,9 @@ h2,
 h3,
 h4 {
     font-family: 'Bitter', serif;
-}
-
-h1 {
     font-size: 48px;
     font-weight: bold;
 }
-
-/* h2 {
-    font-size: ;
-}
-
-h3 {
-
-}
-
-h4 {
-
-} */
 
 p {
     font-size: 16px;
@@ -48,7 +33,6 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    /* opacity: 60%; */
 }
 
 
@@ -65,7 +49,6 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    /* opacity: 60%; */
 }
 
 #step3::before {
@@ -81,7 +64,6 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    /* opacity: 60%; */
 }
 
 #step4::before {
@@ -97,19 +79,41 @@ p {
     border-radius: 50%;
     background-color: #00306e;
     color: white;
-    /* opacity: 60%; */
 }
 
-/* #faq::before {
+.overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black background with opacity */
+    z-index: 20;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+    backdrop-filter: blur(2px);
+}
+
+.popup {
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-close {
     position: absolute;
-    content: "?.";
-    font-size: 12rem;
-    font-family: 'Bitter', serif;
-    left: 480px;
-    bottom: 10px;
-    rotate: -20deg;
-    color: #00306e;
-    opacity: 30%;
-    z-index: -10;
-    letter-spacing: -30px;
-} */
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    top: -50px;
+    right: -20px;
+}

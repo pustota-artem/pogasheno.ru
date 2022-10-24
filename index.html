@@ -38,6 +38,7 @@
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Raleway:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Центр списания налогов, долгов, кредитов и ЖКХ</title>
 </head>
 
@@ -88,16 +89,15 @@
                             </path>
                         </svg>
                     </div>
-                    <button
-                        class="px-[10px] py-[5px] text-white bg-[#00306e] rounded-md text-sm font-semibold">Позвоните
+                    <button class="px-[10px] py-[5px] text-white bg-[#00306e] rounded-md text-sm font-semibold"
+                        id="callme-btn">Позвоните
                         мне</button>
                 </div>
 
             </div>
 
-
-            <!-- </div> -->
         </div>
+
     </section>
 
     <!-- MAIN -->
@@ -108,38 +108,79 @@
 
         <div class="lg:w-[1385px] w-full p-8 md:p-20">
 
-            <div class="relative w-[1700px] lg:w-[1000px]">
+            <div class="relative w-[1700px] lg:w-[1000px]" id="main-photo">
                 <img src="src/img/main3.png" alt="Фото юриста"
                     class="absolute -left-[220px] -top-[100px] lg:-top-[20px] -z-20">
             </div>
 
-            <div
-                class="flex items-center justify-center h-full lg:justify-end text-gray-50 lg:text-black lg:h-min lg:text-center">
+            <div class="flex items-center justify-center h-full lg:justify-end text-gray-50 lg:text-black lg:h-min lg:text-center"
+                id="main-text">
 
-                <div class="flex flex-col lg:items-center lg:space-y-10 max-w-[800px]">
+                <div class="lg:mt-14 flex flex-col lg:items-center max-w-[800px]">
 
-                    <h1 class="mb-8 text-5xl font-bold lg:mb-0 md:text-6xl">Спишу <span class="text-[#d9002b]">все
+                    <h1 class="mb-8 text-5xl font-bold lg:mb-10 md:text-6xl">Спишу <span class="text-[#d9002b]">все
                             ваши
                             долги</span> или верну
                         деньги</h1>
 
-                    <p class="mb-8 text-xl lg:mb-0 md:text-2xl">Все сделаю за вас — от сбора документов до решения суда
+                    <p class="mb-8 text-xl lg:mb-10 md:text-2xl">Все сделаю за вас — от сбора документов до решения суда
                     </p>
 
-                    <ul class="flex flex-col mb-16 lg:mb-0 text-md md:flex-row md:space-x-10">
+                    <ul class="flex flex-col mb-16 list-disc lg:mb-10 text-md md:flex-row md:space-x-10 lg:hidden">
                         <li>Сохраню ваше имущество</li>
                         <li>Банкротство за 2 месяца</li>
                         <li>100% результат</li>
                     </ul>
 
                     <button
-                        class="px-[16px] py-[10px] font-semibold text-white bg-[#00306e] rounded-md shadow-lg text-lg w-fit">Бесплатная
+                        class="px-[16px] py-[10px] font-semibold text-white bg-[#00306e] rounded-md shadow-xl text-lg w-fit">Бесплатная
                         консультация</button>
+
+                    <div class="justify-center hidden space-x-10 lg:flex lg:mt-[6rem]">
+
+                        <div class="flex items-center justify-start bg-white w-[190px] p-3 text-lg font-bold shadow-lg rounded-md">
+                            <div>
+                                <svg class="" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 24 24" color="#00306e" height="40px" width="40px"
+                                    xmlns="http://www.w3.org/2000/svg" style="color: rgb(0, 48, 110);">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                        d="M10.5 13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13zM12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="ml-[3px] leading-5">Сохраню ваше имущество</p>
+                        </div>
+                        <div class="flex items-center justify-start bg-white w-[190px] p-3 text-lg font-bold shadow-lg rounded-md">
+                            <div>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                    color="#00306e" height="40px" width="40px" xmlns="http://www.w3.org/2000/svg"
+                                    style="color: rgb(0, 48, 110);">
+                                    <path
+                                        d="M112 880c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V460H112v420zm768-696H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v176h800V216c0-17.7-14.3-32-32-32z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="ml-[3px] leading-5">Банкротство за 2 месяца</p>
+                        </div>
+                        <div class="flex items-center justify-start bg-white w-[190px] p-3 text-lg font-bold shadow-lg rounded-md">
+                            <div>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                    color="#00306e" height="40px" width="40px" xmlns="http://www.w3.org/2000/svg"
+                                    style="color: rgb(0, 48, 110);">
+                                    <path
+                                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM695.5 365.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L308.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H689c6.5 0 10.3 7.4 6.5 12.7z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="ml-[3px] leading-5">100% результат</p>
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
-
 
         </div>
 
@@ -265,7 +306,7 @@
 
     <section class="flex justify-center">
         <div class="w-full lg:w-[1385px] p-8 md:p-20">
-            <h1 class="text-3xl mb-7 md:mb-14 md:text-5xl">Сравните банкротство и альтернативные варианты</h1>
+            <h1 class="text-3xl mb-7 md:mb-14 md:text-5xl ">Сравните банкротство и альтернативные варианты</h1>
 
             <table class="block overflow-x-auto rounded-lg shadow-lg max-w-max">
                 <thead class="border-b-2 border-gray-200 bg-slate-50">
@@ -300,7 +341,7 @@
                             подходит тем, у кого действительно есть проблема.
                         </td>
                         <td class="p-3 lg:p-5 text-sm lg:text-base text-gray-700 max-w-[350px]">Если у вас
-                            действительно,
+                            действительно сложная ситуация,
                             программа вам не выгодна.</td>
                         <td class="p-3 lg:p-5 text-sm lg:text-base text-gray-700 max-w-[350px]">Срок действия договора с
                             банком увеличивается
@@ -460,7 +501,7 @@
         <div class="max-w-[1385px] p-8 md:p-20">
             <h1 class="text-3xl text-center md:text-left md:text-5xl mb-7 md:mb-14">Мои кейсы</h1>
             <div>
-                <div class="swiper mySwiper h-[425px] w-[320px] md:w-[600px] lg:w-[860px] xl:w-[1250px]">
+                <div class="swiper mySwiper h-[425px] w-[320px] md:w-[600px] lg:w-[860px] xl:w-[1260px]">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
@@ -734,9 +775,18 @@
 
                     </div>
                     <div class="swiper-pagination"></div>
-                    <!-- <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
                 </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-5 mt-6 lg:gap-10">
+                <button
+                    class="px-[16px] py-[10px] font-semibold text-white bg-[#00306e] rounded-md shadow-lg text-lg">Отзывы
+                    на Яндекс.Картах</button>
+                <button
+                    class="px-[16px] py-[10px] font-semibold text-white bg-[#00306e] rounded-md shadow-lg text-lg">Отзывы
+                    на Google Maps</button>
+                <button
+                    class="px-[16px] py-[10px] font-semibold text-white bg-[#00306e] rounded-md shadow-lg text-lg">Отзывы
+                    на сайте Zoon</button>
             </div>
         </div>
     </section>
@@ -859,6 +909,9 @@
                         </p>
                     </div>
                 </div>
+                <button
+                    class="px-[16px] py-[10px] font-semibold text-white bg-[#00306e] rounded-md shadow-lg text-lg">Задать
+                    вопрос</button>
             </div>
         </div>
     </section>
@@ -923,6 +976,25 @@
                 </div>
             </div>
     </section>
+
+    <div class="" id="overlay"></div>
+
+    <div class="hidden" id="callme">
+        <p class="popup-close" id="popup-close">x</p>
+        <div class="relative flex flex-col justify-center bg-white rounded-xl">
+            <form class="flex flex-col p-10 bg-white shadow-xl rounded-xl" action="">
+                <p class="mb-6 text-2xl font-bold md:text-3xl">Свяжусь с вами в течение 5 минут!</p>
+                <p class="mb-2">Имя:</p>
+                <input class="p-5 mb-4 bg-gray-100 rounded-md shadow-sm" type="text">
+                <p class="mb-2">Эл. адрес:</p>
+                <input class="p-5 mb-4 bg-gray-100 rounded-md shadow-sm" type="email">
+                <p class="mb-2">Телефон:</p>
+                <input class="p-5 mb-8 bg-gray-100 rounded-md shadow-sm" type="tel">
+                <button class="px-[16px] py-[10px] font-semibold text-white bg-[#00306e] rounded-md shadow-lg text-lg"
+                    id="callme-btn">Позвоните мне</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/src/js/script.js"></script>

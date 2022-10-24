@@ -59,50 +59,83 @@ let openBtns = document.querySelectorAll('#open-info-btn');
 let infoBlocks = document.querySelectorAll('#info-block');
 
 for (let i = 0; i < openBtns.length; i++) {
-    let openBtn = openBtns[i];
-    let infoBlock = infoBlocks[i];
-    openBtn.onclick = () => {
-        if (infoBlock.classList.contains('max-h-0')) {
-            infoBlock.classList.remove('max-h-0');
-            infoBlock.classList.add('max-h-[600px]');
-            openBtn.classList.add('rotate-180');
-        } else {
-            infoBlock.classList.remove('max-h-[600px]');
-            infoBlock.classList.add('max-h-0');
-            openBtn.classList.remove('rotate-180');
-        }
+  let openBtn = openBtns[i];
+  let infoBlock = infoBlocks[i];
+  openBtn.onclick = () => {
+    if (infoBlock.classList.contains('max-h-0')) {
+      infoBlock.classList.remove('max-h-0');
+      infoBlock.classList.add('max-h-[600px]');
+      openBtn.classList.add('rotate-180');
+    } else {
+      infoBlock.classList.remove('max-h-[600px]');
+      infoBlock.classList.add('max-h-0');
+      openBtn.classList.remove('rotate-180');
     }
+  }
 };
 
 // SWIPER 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },    
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
     },
-  });
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
+
+// Animation on scroll
+
+// const observers = new IntersectionObserver(entries => {
+//   // Loop over the entries
+//   entries.forEach(entry => {
+//     // If the element is visible
+//     if (entry.isIntersecting) {
+//       // Add the animation class
+//       entry.target.classList.add('animate__animated', 'animate__fadeIn',);
+//     }
+//   });
+// });
+
+// const targets = document.querySelectorAll('.p-8');
+// for (const target of targets) {
+//   observers.observe(target);
+// };
+
+// Call me popup
+
+const callMeBtns = document.querySelectorAll('#callme-btn');
+
+
+// array.forEach(element => {
+  
+// });
+
+document.querySelector('#callme-btn').addEventListener('click', () => {
+  document.getElementById('overlay').classList.add('overlay');
+  document.getElementById('callme').classList.remove('hidden');
+  document.getElementById('callme').classList.add('popup');
+});
